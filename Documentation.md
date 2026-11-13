@@ -23,6 +23,13 @@
 
 #### ▫️مرحله 0 - Connectivity
 
+| قابلیت            | محل پیاده‌سازی | دلیل                             |
+| ----------------- | :------------: | -------------------------------- |
+| IP Address        |    کل شبکه     | مشخصه                            |
+| DHCP Server       |    RouterOS    | دادن IP به Staff, Guests, Admins |
+| Trunk Interface   |   CSW & ASWs   | نیاز برای ارتباطات اولیه         |
+| Access Interfaces |      ASWs      | نیاز برای ارتباطات اولیه         |
+
 
 
 
