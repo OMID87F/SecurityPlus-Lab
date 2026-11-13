@@ -1,3 +1,8 @@
+```
+
+```
+
+
 
 # 🔻تمرین عملی مباحث +Security
 
@@ -25,15 +30,15 @@
 #### ▫️مرحله 1 - Layer2 Security
 
 
-| قابلیت                     | محل پیاده‌سازی           | دلیل                              |
-| -------------------------- | ------------------------ | --------------------------------- |
-| Port Security + Sticky MAC | ASW1 و ASW2              | محدودکردن دستگاه‌های متصل به پورت |
-| Unused Port Shutdown       | هر سه Switch             | کاهش سطح حمله فیزیکی              |
-| BPDU Guard                 | پورت‌های Access          | جلوگیری از اتصال سوئیچ غیرمجاز    |
+| قابلیت                     |      محل پیاده‌سازی      | دلیل                              |
+| -------------------------- | :----------------------: | --------------------------------- |
+| Port Security + Sticky MAC |       ASW1 و ASW2        | محدودکردن دستگاه‌های متصل به پورت |
+| Unused Port Shutdown       |       هر سه Switch       | کاهش سطح حمله فیزیکی              |
+| BPDU Guard                 |     پورت‌های Access      | جلوگیری از اتصال سوئیچ غیرمجاز    |
 | Root Guard                 | لینک‌ها و پورت‌های مناسب | محافظت از Root Bridge             |
-| DHCP Snooping              | CSW و ASWها              | مقابله با Rogue DHCP              |
-| Dynamic ARP Inspection     | ASWها                    | مقابله با ARP Spoofing            |
-| IP Source Guard            | پورت‌های Access          | جلوگیری از IP Spoofing            |
+| DHCP Snooping              |       CSW و ASWها        | مقابله با Rogue DHCP              |
+| Dynamic ARP Inspection     |          ASWها           | مقابله با ARP Spoofing            |
+| IP Source Guard            |     پورت‌های Access      | جلوگیری از IP Spoofing            |
 
 
 #### ▫️مرحله 2 - Network Segmentation & Firewall
