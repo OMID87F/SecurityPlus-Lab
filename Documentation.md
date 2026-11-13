@@ -21,6 +21,11 @@
 
 ### 🔸اقدامات
 
+#### ▫️مرحله 0 - Connectivity
+
+
+
+
 #### ▫️مرحله 1 - Layer2 Security
 
 
@@ -40,8 +45,6 @@
 
 | قابلیت               | محل پیاده‌سازی | دلیل                                    |
 | -------------------- | :------------: | --------------------------------------- |
-| VLAN Segmentation    | Cisco Switches | جداسازی بخش‌های سازمان                  |
-| Inter-VLAN Filtering |  MikroTik CHR  | کنترل ارتباط بین VLANها                 |
 | Stateful Firewall    |  MikroTik CHR  | کنترل ارتباطات بر اساس وضعیت Connection |
 | Default Deny         |  MikroTik CHR  | مسدودکردن ارتباطات غیرضروری             |
 | Egress Filtering     |  MikroTik CHR  | کنترل ارتباطات خروجی                    |
@@ -105,32 +108,22 @@
 
 ### 🔸کانفیگ‌ها
 
-#### ▫️مرحله 1 - Layer2 Security
+#### ▫️کانفیگ‌های RouterOS
 
 
 
 
-#### ▫️مرحله 2 - Network Segmentation & Firewall
+#### ▫️کانفیگ‌‌‌های SWها
 
 
 
 
-#### ▫️مرحله 3 - Secure Network Management
+#### ▫️کانفیگ‌های Windows Server
 
 
 
 
-#### ▫️مرحله 4 - Windows & Identity Security
-
-
-
-
-#### ▫️مرحله 5 - Security Assessment & Monitoring
-
-
-
-
-#### ▫️مرحله 6 - Cryptography, Recovery & Risk
+#### ▫️کانفیگ‌های Lubuntu
 
 
 
@@ -138,6 +131,11 @@
 
 
 ## 🔹راستی آزمایی
+
+#### ▫️مرحله 0 - Connectivity
+
+
+
 
 #### ▫️مرحله 1 - Layer2 Security
 
@@ -201,16 +199,4 @@
 ## 🔹نتیجه
 
 >
-
-
-
-
-
-
-
-
-
-
-
-
 
