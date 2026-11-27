@@ -2,7 +2,7 @@
 
 ## 🔹محیط کار و توپولوژی
 
-![Topology](Topology.png)    
+![Topology](Topology.png)
 **GNS3**⬆️
 
 
@@ -35,15 +35,14 @@
 #### ▫️مرحله 1 - Layer2 Security
 
 
-| قابلیت                     |      محل پیاده‌سازی      | دلیل                              |
-| :------------------------- | :----------------------: | :-------------------------------- |
-| Port Security + Sticky MAC |       ASW1 و ASW2        | محدودکردن دستگاه‌های متصل به پورت |
-| Unused Port Shutdown       |       هر سه Switch       | کاهش سطح حمله فیزیکی              |
-| BPDU Guard                 |     پورت‌های Access      | جلوگیری از اتصال سوئیچ غیرمجاز    |
-| Root Guard                 | لینک‌ها و پورت‌های مناسب | محافظت از Root Bridge             |
-| DHCP Snooping              |       CSW و ASWها        | مقابله با Rogue DHCP              |
-| Dynamic ARP Inspection     |          ASWها           | مقابله با ARP Spoofing            |
-| IP Source Guard            |     پورت‌های Access      | جلوگیری از IP Spoofing            |
+| قابلیت                     | محل پیاده‌سازی  | دلیل                              |
+| :------------------------- | :-------------: | :-------------------------------- |
+| Port Security + Sticky MAC |   ASW1 و ASW2   | محدودکردن دستگاه‌های متصل به پورت |
+| Unused Ports Shutdown      |  هر سه Switch   | کاهش سطح حمله فیزیکی              |
+| STP (Rapid PVST)           |  هر سه Switch   | جلوگیری از اتصال سوئیچ غیرمجاز    |
+| DHCP Snooping              |   CSW و ASWها   | مقابله با Rogue DHCP              |
+| Dynamic ARP Inspection     |      ASWها      | مقابله با ARP Spoofing            |
+| IP Source Guard            | پورت‌های Access | جلوگیری از IP Spoofing            |
 
 
 #### ▫️مرحله 2 - Network Segmentation & Firewall
@@ -128,9 +127,9 @@
 
  - دستورات وارد شده برای [IOSvL2-CSW](IOSvL2-CSW.md)
 	
-1. دستورات وارد شده برای [IOSvL2-ASW1](IOSvL2-ASW1.md)
-
-2. دستورات وارد شده برای [IOSvL2-ASW2](IOSvL2-ASW2.md)
+- دستورات وارد شده برای [IOSvL2-ASW1](IOSvL2-ASW1.md)
+	
+- دستورات وارد شده برای [IOSvL2-ASW2](IOSvL2-ASW2.md)
 
 
 #### ▫️کانفیگ‌های Windows Server
@@ -153,7 +152,7 @@
 >برقراری ارتباط بین Endpointها.
 
 اجرای`ping`بین Endpointها⬇️
-
+![[0 - Ping.png]]
 
 
 #### ▫️مرحله 1 - Layer2 Security
@@ -161,11 +160,16 @@
 >**آزمایش:**
 >اتصال MAC غیرمجاز، DHCP Server جعلی، ARP Spoofing و بررسی رفتار Switchها.
 
-تست Port Security⬇️
+1. تست Port Security⬇️
 ![[1 - Port Security - ASW2.png]]
 
-تست...
+2. خاموش بودن Portهای بی‌مصرف⬇️
+![[1 - Unused Ports Shutdown.png]]
 
+3. تست Rapid PVST (تست BPDU Guard و Root Guard)⬇️
+![[1 - Rapid PVST - ASW2.png]]
+
+4. 
 
 
 #### ▫️مرحله 2 - Network Segmentation & Firewall
