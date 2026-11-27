@@ -125,7 +125,7 @@
 
 #### ▫️کانفیگ‌‌‌های SWها
 
- - دستورات وارد شده برای [IOSvL2-CSW](IOSvL2-CSW.md)
+ - دستورات وارد شده برای [IOSvL2-CSW](./Sources/Configs/IOSvL2-CSW.md)
 	
 - دستورات وارد شده برای [IOSvL2-ASW1](IOSvL2-ASW1.md)
 	
